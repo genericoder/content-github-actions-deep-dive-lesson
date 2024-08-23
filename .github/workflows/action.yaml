@@ -125,7 +125,7 @@ jobs:
         if: ${{ always() }}
         # aws lambda delete-function --function-name test-function-${{ matrix.input }}
         run: |
-          run: aws lambda delete-function --function-name test-function
+          aws lambda delete-function --function-name test-function
 
   deploy:
     runs-on: ubuntu-latest
